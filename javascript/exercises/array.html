@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+    <script>
+
+        const userNames = ["Bridget","Carol","Christine","Deborah"];  
+        console.log(userNames);
+
+        const fruits = ["Apple", "Pineapple", "Banana", "Grapes"];
+        console.log("Number of items in fruit array: "+fruits.length);
+        console.log("Array element at position 1:" + fruits [1]);
+
+        console.log("Last element"+ fruits.length-1);
+
+        for (i = 0; i < fruits.length; i++) {
+        console.log("Array Element: "+i+": "+fruits[i]);
+        }
+
+        for (i in fruits) {
+            console.log("Looping with for ... in: "+fruits[i]);
+            }
+         
+            let fruitsShifted = fruits.shift();
+            console.log("Array without first element:" + fruits);
+            console.log("Deleted element:" + fruitsShifted);
+
+            fruits.unshift("Kiwis");
+            console.log("Array with first new ele" + fruits);
+
+            fruits.pop();
+            console.log("Array with the first element deleted:" + fruits);
+
+            fruits.push("Blueberry");
+            console.log("Array with last element deleted" + fruits);
+
+            const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+            console.log("Array Before two new values spliced in: " + fruits3);
+
+            fruits3.splice(2, 0, "Lemon", "Kiwi");
+
+            console.log("Array After two new values spliced in: " + fruits3);
+
+            fruits.splice(0, 1);
+
+            console.log("Array After \"Lemon\" at index [2] deleted: " + fruits3);
+
+            const slicedFruits = fruits3.slice(1, 3);
+            console.log("MIni-array:" + slicedFruits);
+            console.log("Original array: " + fruits3);
+
+            const newString = fruits3.toString(0);
+            console.log("String that was an array:" + frui)
+
+    </script>
+ </body>
+ </html>
